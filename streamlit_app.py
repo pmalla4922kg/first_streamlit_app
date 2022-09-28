@@ -56,7 +56,7 @@ streamlit.dataframe(fruityvice_normalized)
 #Snowflake.connector code..
 #import snowflake.connector. Some reason import snowflake.connector is not working here, so I need to keep at the top of the code
 
-Streamlit.stop();
+Streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
